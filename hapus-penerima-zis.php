@@ -1,9 +1,9 @@
 <?php 
 // koneksi ke database
 require 'functions.php';
-$id = $_GET["id"];
+$id_penerima = $_GET["id_penerima"];
 
-if (hapus_penerima_zis($id) > 0 ){
+if (hapus_penerima_zis($id_penerima) > 0 ){
   echo "
   <script>
   alert('Data Berhasil Dihapus');
